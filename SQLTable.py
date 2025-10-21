@@ -54,9 +54,35 @@ def select_all():
         print(u.id, u.name, u.email, u.birthdate, u.is_active, u.phone, u.city)
     session.close()
 
+def update_user_all(user_id, name, email, birthdate, is_active, phone, city):
+    session = Session()
+    user = session.query(User).filter(User.id == user_id).first()
+    if user:
+        user.name = name
+        user.email = email
+        user.birthdate = birthdate
+        user.is_active = is_active
+        user.phone = phone
+        user.city = city
+        session.commit()
+        print(f"Пользователь с id={user_id} обновлен полностью:")
+        print(user.id, user.name, user.email, user.birthdate, user.is_active, user.phone, user.city)
+    else:
+        print(f"Пользователь с id={user_id} не найден.")
+        session.close()
+
 drop_table()
 create_table()
 insert_users()
+update_user_all(
+    user_id=1,
+    name="Иван Петров",
+    email="ivanpetrov@example.com",
+    birthdate=date(1991, 2, 2),
+    is_active=False,
+    phone="999999999",
+    city="Екатеринбург"
+)
 select_all()
 
 
