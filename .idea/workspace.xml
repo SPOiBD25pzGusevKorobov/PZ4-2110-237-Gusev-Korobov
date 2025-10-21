@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78ce6632-0623-43d7-98f8-b2da4f8ba8be" name="Changes" comment="Создание ORM моделей, создание сессий, создание класса таблиц, функции для создания таблицы, удаления таблицы, вставки данных и селект юзеров">
+    <list default="true" id="78ce6632-0623-43d7-98f8-b2da4f8ba8be" name="Changes" comment="Апдейт пользователей">
+      <change afterPath="$PROJECT_DIR$/diabetes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SQLTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/SQLTable.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,13 +48,23 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.SQLTable.executor": "Run",
+    "Python.ertete.executor": "Run",
     "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/nikitagusev/PycharmProjects/PZ4-2110-237-Gusev-Korobov"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -100,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761046375291</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Апдейт пользователей">
+      <option name="closed" value="true" />
+      <created>1761046950767</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761046950767</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -108,6 +128,7 @@
     <MESSAGE value="test2" />
     <MESSAGE value="подключение к БД на jino" />
     <MESSAGE value="Создание ORM моделей, создание сессий, создание класса таблиц, функции для создания таблицы, удаления таблицы, вставки данных и селект юзеров" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создание ORM моделей, создание сессий, создание класса таблиц, функции для создания таблицы, удаления таблицы, вставки данных и селект юзеров" />
+    <MESSAGE value="Апдейт пользователей" />
+    <option name="LAST_COMMIT_MESSAGE" value="Апдейт пользователей" />
   </component>
 </project>
