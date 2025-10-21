@@ -30,6 +30,10 @@ def drop_table(table_name):
         conn.execute(text(f"DROP TABLE IF EXISTS `{table_name}`;"))
         print(f"Таблица '{table_name}' удалена (если существовала).")
 
+def drop_table_static():
+    Base.metadata.drop_all(engine)
+    print("Таблица удалена.")
+
 def show_table(table_name, limit=10):
     df = pd.read_sql_query(f"SELECT * FROM `{table_name}` LIMIT {limit}", con=engine)
     print(df)
@@ -94,25 +98,25 @@ def import_csv(csv_path, table_name=None):
     print(f"CSV-таблица '{csv_path}' импортирована в таблицу MySQL '{table_name}'")
 
 
-# create_table()
-# insert_users()
-# update_user_all(
-#     user_id=1,
-#     name="Иван Петров",
-#     email="ivanpetrov@example.com",
-#     birthdate=date(1991, 2, 2),
-#     is_active=False,
-#     phone="999999999",
-#     city="Екатеринбург"
-# )
-# select_all()
-# export_to_csv("users1.csv")
-# df = pd.read_csv("users1.csv")
-# print(df)
-# import_csv('diabetes.csv', table_name='diabetes')
-# export_to_csv('diabetes.csv')
-# drop_table('diabetes')
-# show_table('diabetes')
+create_table()
+insert_users()
+update_user_all(
+    user_id=1,
+    name="Иван Петров",
+    email="ivanpetrov@example.com",
+    birthdate=date(1991, 2, 2),
+    is_active=False,
+    phone="999999999",
+    city="Екатеринбург"
+)
+select_all()
+export_to_csv("users1.csv")
+df = pd.read_csv("users1.csv")
+print(df)
+import_csv('diabetes.csv', table_name='diabetes')
+export_to_csv('diabetes.csv')
+drop_table('diabetes')
+show_table('diabetes')
 
 
 connection = engine.connect()
