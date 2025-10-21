@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="78ce6632-0623-43d7-98f8-b2da4f8ba8be" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/PZ4-2110-237-Gusev-Korobov.iml" afterDir="false" />
